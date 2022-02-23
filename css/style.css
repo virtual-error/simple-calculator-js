@@ -1,0 +1,86 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+html{
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #202225;
+  font-family: sans-serif;
+}
+.calculator{
+  border: 1px solid black;
+  width:310px;
+  padding: 0.5rem;
+  background-color: #202020;
+  /* background-color: #202020; */
+}
+/*
+RESULT SCREEN
+*/
+.results{
+  text-align: right;
+  font-size: 4rem;
+  margin:2rem 0;
+  overflow-y: auto;
+  background-color: white;
+}
+/*
+BUTTONS
+*/
+.buttons{
+  
+  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.buttons>*{
+  margin: 0.2rem;
+  padding:2rem 1.5rem;
+  border:1px solid black;
+  color: white;
+
+  width:7rem;
+  text-align: center;
+  background-color: #2c2c2c;
+}
+
+.buttons > *:hover {
+  background-color: #343434;
+}
+
+.buttons > *:active {
+  background-color: #2c2c2c;
+}
+.equal{
+  flex-basis:100%;
+  color: black;
+  background-color: #43abe1;
+}
+.equal:hover {
+  background-color: #3f9ccd;
+}
+
+.equal:active {
+  background-color: #3687b1;
+}
+.zero{
+  flex-grow:1
+}
